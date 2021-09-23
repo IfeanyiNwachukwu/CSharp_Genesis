@@ -22,6 +22,19 @@ namespace ForCSharp
             // String Slicing
             var result = substring.SliceString("Miracle", 2);
             Debug.WriteLine(result);
+
+            // String Formatting
+            int price1 = 100;
+            int price2 = 150;
+            int price3 = 200;
+            Debug.WriteLine(string.Format("The item1 costes {0:C} The item1 costes {1:C}  The item1 costes {2:C}", price1,price2,price3));
+
+            float percent = 0.5f;
+            Debug.WriteLine(string.Format("The task is {0:P} complete", percent));
+
+
+
+
         }
     }
 }
