@@ -1,4 +1,5 @@
 ﻿using ForCSharp.OperatorOverloading;
+using ForCSharp.StringSlicing;
 using System;
 using System.Diagnostics;
 
@@ -17,6 +18,10 @@ namespace ForCSharp
             Debug.WriteLine($"Length: {box3.GetLength()}");
             Debug.WriteLine($"Width: {box3.GetWidth()}");
             Debug.WriteLine($"Length: {box3.GetHeight()}");
+
+            // String Slicing
+            var result = substring.SliceString("Miracle", 2);
+            Debug.WriteLine(result);
         }
     }
 }
